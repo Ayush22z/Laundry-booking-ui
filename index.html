@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laundry Booking | FreshFold</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🧺 FreshFold Laundry</h1>
+      <p>Your trusted doorstep laundry partner</p>
+    </header>
+
+    <form id="orderForm">
+      <h2>Book Your Laundry Pickup</h2>
+
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" required>
+
+      <label for="address">Pickup Address:</label>
+      <textarea id="address" required></textarea>
+
+      <label for="date">Pickup Date:</label>
+      <input type="date" id="date" required>
+
+      <label for="time">Pickup Time:</label>
+      <input type="time" id="time" required>
+
+      <label for="service">Service Type:</label>
+      <select id="service">
+        <option>Washing & Ironing</option>
+        <option>Dry Cleaning</option>
+        <option>Ironing Only</option>
+      </select>
+
+      <label for="items">Clothing Items (e.g. 2 Shirts, 1 Trousers):</label>
+      <textarea id="items" required></textarea>
+
+      <button type="submit">Submit Order</button>
+    </form>
+
+    <div id="summary" class="hidden">
+      <h2>Order Received ✅</h2>
+      <p id="summaryText"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
